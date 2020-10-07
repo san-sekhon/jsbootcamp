@@ -10,7 +10,12 @@ todos.push('last item');
 todos.shift();
 
 console.log(`You have ${todos.length} todos.`);
-console.log(todos);
+todos.forEach((todo, index) => {
+  console.log(`${index + 1}. ${todo}`);
+});
+
+
+//console.log(todos);
 // console.log(`Todo: ${todos[0]}`);
 // console.log(`Todo: ${todos[todos.length - 2]}`);
 
